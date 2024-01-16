@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealapp</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="icon" type="image/png" href="assets/icon-app.png">
+</head>
+<body>
+    <main class="w-full h-screen">
+        <nav class=" dark:bg-primary border-b">
+            <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://icons.iconarchive.com/icons/google/noto-emoji-food-drink/512/32405-spaghetti-icon.png" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold dark:text-color">mealapp</span>
+                </a>
+            </div>
+        </nav>
+        <a class="lg:block hidden flex items-center py-4 px-5 rounded font-medium select-none w-36 text-gray-900 bg-white transition-colors hover:text-yellow-400"
+            href="index.html">
+            ⪻ Back
+        </a>
+
+        <section class="content py-4 px-16 mb-16">
+            <header class="text-4xl font-semibold current-meals mb-5">
+                <span class="meal-name"></span> Meals
+            </header>
+            <div class="variant-meals flex flex-wrap justify-center items-center gap-8"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Felicia Pangestu. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="assets/jquery-3.6.1.min.js"></script>
+    <script src="script/detailCategory.js"></script>
+</body>
+</html>
